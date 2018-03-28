@@ -1,0 +1,40 @@
+{
+  "name": "minarai-standard-payload",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "`npm bin`/webpack",
+    "lint": "`npm bin`/eslint ./src; exit 0;",
+    "jest": "jest --verbose --coverage",
+    "test": "npm run lint && npm run jest",
+    "tdd": "npm run jest -- --watchAll"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "js-schema": "^1.0.1",
+    "keymirror": "^0.1.1",
+    "tern": "^0.21.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.2",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-import-glob": "^2.0.0",
+    "babel-plugin-root-import": "^5.1.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "dts-gen": "^0.5.7",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "jest": "^22.4.3",
+    "webpack": "^4.3.0",
+    "webpack-cli": "^2.0.13",
+    "webpack-node-externals": "^1.6.0"
+  }
+}

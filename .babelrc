@@ -1,0 +1,11 @@
+{
+  "presets": [ ["env", { "targets": { "browsers": ["last 2 versions"] } }], "stage-0" ],
+  "plugins": [
+    [ "babel-plugin-root-import", [{
+      "rootPathPrefix": "~",
+      "rootPathSuffix": "src/"
+    }]],
+    "import-glob",
+  ],
+}
+
