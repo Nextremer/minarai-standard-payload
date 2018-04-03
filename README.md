@@ -11,7 +11,7 @@ This contains following modules for Minarai Standard Payload.
 ## Install
 
 ```shell
-npm install -s git+https://git@github.com/Nextremer/minarai-standard-payload.git
+npm install -s git+ssh://git@github.com/Nextremer/minarai-standard-payload.git
 ```
 
 ## Usage
