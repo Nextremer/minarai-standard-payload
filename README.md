@@ -7,7 +7,6 @@ This contains following modules for Minarai Standard Payload.
 ## Table of Contents
 - [Install](#install)
 - [Usage](#usage)
-- [Demo](#demo)
 
 ## Install
 
@@ -32,57 +31,10 @@ const dest = new Converter({
 }).convertTo({ type: PAYLOAD_TYPES.MINARAI_STANDARD });
 ```
 
-#### Convert engine's response to Standard Payload
+#### Validator
 
 ```js
+const { validator } from 'minarai-standard
 
+validator.isValidCSChatApplicationServerResponse(payload); // true or false
 ```
-### setup
-
-```shell
-npm install
-```
-
-### build(dev)
-
-```shell
-npm run build
-```
-
-### build(staging)
-
-```shell
-npm run build:staging
-```
-
-### build(production)
-
-```shell
-npm run build:production
-```
-
-### start(local)
-
-```shell
-npm start
-```
-
-### test(jest)
-
-```shell
-# once
-npm run test
-
-# watch
-npm run tdd
-```
-
-## Demo
-
-See https://nextremer.esa.io/posts/440
-
-### Update
-
-You can update demo to push `staging` branch.
-
-
