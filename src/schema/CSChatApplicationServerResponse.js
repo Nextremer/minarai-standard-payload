@@ -25,7 +25,7 @@ export default {
           {
             type: String,
             captions: Array.of(String),
-            commands: Array.of(String),
+            commands: Array.of([null, String]),
           },
           // command
           {
