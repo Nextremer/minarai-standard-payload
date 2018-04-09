@@ -18,8 +18,9 @@ export default {
           // figure
           {
             type: String,
-            '?alt': String,
+            '?alt': [null, String],
             url: String,
+            '?face': String,
           },
           // buttons
           {
