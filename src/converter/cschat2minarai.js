@@ -27,9 +27,8 @@ export default function (src) {
       .map(e => ({
         actor: '', // TODO 現状のCSChatレスポンスには含まれていないため空文字列
         text: e.md,
-        extra: {
-          face: e.face || '',
-        },
+        expression: e.face || null,
+        extra: {},
       }));
 
     // その他、typeに応じた処理
@@ -73,8 +72,9 @@ export default function (src) {
           titleText: '', // TODO 現状固定
           utterances,
           buttons,
-          extra: message.extra,
+          extra: message.extra || {},
         }],
+        extra: body.extra || {},
       },
     };
   } catch (e) {
